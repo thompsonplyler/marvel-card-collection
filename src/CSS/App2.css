@@ -1,0 +1,89 @@
+/* Fonts */
+
+@font-face {
+  font-family: SuperHero;
+  src: url(../fonts/SUPERHERO.ttf);
+}
+@font-face {
+  font-family: Super;
+  src: url(../fonts/DigitalStripBB_BoldItal.ttf);
+}
+@font-face {
+  font-family: Super1;
+  src: url(../fonts/DigitalStripBB_Reg.ttf);
+}
+@font-face {
+  font-family: Super2;
+  src: url(../fonts/DigitalStripBB_Ital.ttf);
+}
+@font-face {
+  font-family: Super3;
+  src: url(../fonts/Comic.ttf);
+}
+@font-face {
+  font-family: Super4;
+  src: url(../fonts/AVENGEANCE.ttf);
+}
+@font-face {
+  font-family: Super5;
+  src: url(../fonts/Marvel-Regular.ttf);
+}
+
+/* CSS for Card Slide Transition */
+
+
+ *,
+ *:before,
+ *:after {
+   box-sizing: border-box;
+ }
+
+ html {
+   min-height: 100%;
+ }
+
+/*  Wood Background*/
+ body {
+   background: #666 url(https://s.cdpn.io/44759/Wood-Backgrounds-Picture.jpg) no-repeat top center;
+   background-size: 2500px;
+   font-family: Georgia;
+   font-size:0.75em;
+   line-height:1.5em;
+
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+   font-weight: 300;
+   margin: 0;
+   padding: 0;
+ }
+
+
+
+h2 {
+  color: #a7a3a4;
+  margin-left: 80px;
+
+}
+
+ #div2 {
+    width:1500px;
+    height:1000px;
+    padding:10px;
+    left: -350px;
+    position:absolute;
+
+  }
+
+#divFirst {
+  width:100%;
+  height:auto;
+  padding:10px;
+  overflow: hidden
+}

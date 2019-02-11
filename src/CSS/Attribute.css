@@ -1,0 +1,76 @@
+
+/* Attribute Name and images  */
+.stats{
+background-color: white
+}
+.stat-name{
+  position: relative;
+  top: -15px;
+  left: 28px;
+color: red;
+font-family: Super2;
+font-size: 19px;
+font-weight: bold;
+
+}
+
+.stat-pic{
+  position: relative;
+  left:5px;
+  top: 10px
+}
+.stat-name2{
+  position: relative;
+  top: -40px;
+  left: 28px;
+color: blue;
+font-family: Super2;
+font-size: 19px;
+font-weight: bold;
+
+}
+
+.stat-pic2{
+  position: relative;
+  left:5px;
+  top: -10px
+}
+
+.stat-name3{
+  position: relative;
+  top: -55px;
+  left: 28px;
+color: green;
+font-family: Super2;
+font-size: 19px;
+font-weight: bold;
+
+}
+
+ul.cards li.card img.stat-pic3{
+  position: relative;
+  left:3px;
+  top: -30px;
+  width: 30px
+}
+
+.stat-name4{
+  position: relative;
+  top: -8px;
+  left: 28px;
+color: green;
+font-family: Super2;
+font-size: 19px;
+font-weight: bold;
+
+}
+
+ul.cards li.card img.stat-pic4{
+  position: relative;
+  left:3px;
+  top: -55px;
+  width: 20px;
+  height: 30px
+}
+
+/* END ATTRIBUTE */

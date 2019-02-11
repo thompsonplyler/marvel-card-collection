@@ -1,30 +1,36 @@
 import React, { Component } from 'react';
-import Card from './components/Card';
-import './App.css';
+import AddToCollection from './Container/AddToCollection'
+import './CSS/App.css';
+import './CSS/SlideOut.css';
+
+
 
 class App extends Component {
+  //SETS INITIAL STATE: CHARACTER= EMPTY ARRAY, I = INCREMENT FOR CARD CSS//
   state={
-    character: {}
+    character: [],
   }
-  
+
+//FETCH FOR CHARACTERS
   componentDidMount(){
-    fetch("http://gateway.marvel.com/v1/public/characters/1009146?apikey=58bea1e75f211476a952296b9b6a544c&hash=95fa758cd8e4e9c661be8f2d7e7fa521&ts=2")
+    fetch("https://gateway.marvel.com:443/v1/public/characters?limit=12&apikey=70c5f7383da76e0b2daaa2d2a67f7532")
     .then(res=>res.json())
     .then(character => this.setState({
-      character: [character.data.results[0]]
-    })
-    )
+      character: character.data.results
+            })
+          )
+    }
 
-  }
 
   render() {
     return (
       <div>
-        {(this.state.character.length) ? <Card character={this.state.character[0]}/> : "Blerp"} 
-       
+      <AddToCollection characters={this.state.character} />
       </div>
-    );
-  }
+          )
+    }
 }
 
 export default App;
+
+// <Login />
