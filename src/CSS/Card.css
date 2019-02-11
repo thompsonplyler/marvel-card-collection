@@ -1,0 +1,208 @@
+
+/* THE CARDS  */
+ ul.cards {
+   width: 660px;
+   margin: 0 auto 20px;
+   height: 400px;
+   list-style-type: none;
+   position: relative;
+   padding: 20px 0;
+   cursor: pointer;
+   left: 310px
+ }
+ ul.cards li.title {
+   margin: 0 0 20px;
+ }
+ ul.cards li.title h2 {
+   font-weight: 700;
+ }
+ ul.cards li.card {
+   height: 400px;
+   width: 300px;
+   border-radius: 10px;
+   position: absolute;
+   left: 0px;
+   transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+ }
+/* FRONT OF CARD */
+.front {
+  border-style: outset;
+  border-width: 5px;
+   border-radius: 15px;
+   background: url("https://images-na.ssl-images-amazon.com/images/I/214g%2BD3%2B0zL._SL500_.jpg")
+ }
+ .front h1 {
+   font-family: SuperHero;
+   font-size: 35px;
+   text-align: center;
+   padding-top: 15px;
+   padding-bottom: 10px;
+   /* color: rgba(black);
+   text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def; */
+   text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+   color: black;
+   opacity: 0.7;
+ }
+ .front h3 {
+   text-align: center;
+ }
+ /* BACK OF CARD */
+ .back {
+   background: url("https://images-na.ssl-images-amazon.com/images/I/214g%2BD3%2B0zL._SL500_.jpg");
+   border-style: outset;
+   border-width: 5px;
+    border-radius: 15px;
+    height: 400px;
+
+ }
+
+ .back h1 {
+   text-align: center;
+   padding-top: 15px;
+   padding-bottom: 10px
+ }
+ .back h3 {
+   text-align: center;
+ }
+ /*IMAGES */
+ /* FRONT IMAGE  */
+
+ ul.cards li.card img.charImage {
+   width: 250px;
+   height: 300px;
+   position: absolute;
+   /* padding: 15px 20px 15px 20px; */
+   left: 25px;
+   border-style: inset
+   /* text-align: center */
+ }
+
+ /* ATTRIBUTE IMAGES */
+ ul.cards li.card img {
+   width:20px;
+   max-width: 100%;
+ }
+
+ /* MARVEL LOGO  */
+ ul.cards li.card img.marvelLogo {
+   top: 8px;
+width: 170px;
+height: 35px;
+position: relative;
+left: 75px;
+border-style: outset;
+ }
+ /* BACK IMAGE  */
+ ul.cards li.card img.charImageBack {
+width: 100px;
+height: 100px;
+position: relative;
+border-style: inset;
+clear: left;
+margin-right: 15px;
+position: relative;
+    left: -25px;
+    top: 10px;
+ }
+/* BACK IMAGE FLOAT */
+ .hop{
+   float: left;
+ }
+
+ /* BACK CHARACTER DESCRIPTION  */
+ ul.cards li.card div.content {
+   position: relative;
+   padding-left: 10px;
+   font-size: 11px;
+ }
+
+ /*  CSS FOR CARD IMAGESTACK */
+ ul.cards li.card.card-1 {
+   z-index: 10;
+   -webkit-transform: rotateZ(-2deg);
+           transform: rotateZ(-2deg);
+ }
+ ul.cards li.card.card-2 {
+   z-index: 9;
+   -webkit-transform: rotateZ(-7deg);
+           transform: rotateZ(-7deg);
+   transition-delay: 0.05s;
+ }
+ ul.cards li.card.card-3 {
+   z-index: 8;
+   -webkit-transform: rotateZ(5deg);
+           transform: rotateZ(5deg);
+   transition-delay: 0.1s;
+ }
+ ul.cards li.card.card-4 {
+   z-index: 7;
+   -webkit-transform: rotateZ(10deg);
+           transform: rotateZ(10deg);
+   transition-delay: 0.15s;
+ }
+ ul.cards li.card.card-5 {
+   z-index: 6;
+   -webkit-transform: rotateZ(16deg);
+           transform: rotateZ(16deg);
+   transition-delay: 0.2s;
+ }
+ ul.cards li.card.card-6 {
+   z-index: 6;
+   -webkit-transform: rotateZ(24deg);
+           transform: rotateZ(24deg);
+   transition-delay: 0.25s;
+ }
+
+ /* CSS FOR CARD EXPANSION PLACEMENT */
+ ul.cards.transition li.card {
+   -webkit-transform: rotateZ(0deg);
+           transform: rotateZ(0deg);
+ }
+ ul.cards.transition li.card.card-1 {
+   left: 710px;
+ }
+ ul.cards.transition li.card.card-2 {
+   left: 380px;
+ }
+ ul.cards.transition li.card.card-3 {
+   left: -0px;
+   /* visibility: hidden */
+ }
+ ul.cards.transition li.card.card-4 {
+   left: -340px;
+ }
+ ul.cards.transition li.card.card-5 {
+   left: -340px;
+   top: 500px
+
+ }
+ ul.cards.transition li.card.card-6 {
+   left: -0px;
+   top: 500px
+
+ }
+ ul.cards.transition li.card.card-7 {
+   left: 380px;
+   top: 500px
+
+ }
+ ul.cards.transition li.card.card-8 {
+   left: 710px;
+   top: 500px
+ }
+ ul.cards.transition li.card.card-9 {
+   left: -340px;
+   top: 1000px
+ }
+ ul.cards.transition li.card.card-10 {
+   left: 0px;
+   top: 1000px
+ }
+ ul.cards.transition li.card.card-11 {
+   left: 380px;
+   top: 1000px
+ }
+ ul.cards.transition li.card.card-12 {
+   left: 710px;
+   top: 1000px
+ }

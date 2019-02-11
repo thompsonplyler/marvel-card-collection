@@ -1,0 +1,99 @@
+/* SLIDEOUT DIV */
+
+.slideout-menu {
+  /* position: fixed; */
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  min-height: 100vh;
+  /* overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; */
+  z-index: 0;
+  display: none;
+  background-color: #fcfcfc;
+}
+.slideout-menu-left {
+  left: 0;
+}
+.slideout-menu-right {
+  right: 0;
+}
+.slideout-panel {
+  /* position: relative; */
+  z-index: 1;
+  will-change: transform;
+  /* background-color: #fff; */
+  min-height: 100vh;
+}
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+
+}
+.slideout-open .slideout-menu {
+  display: block;
+
+}
+/* body {
+  overflow-y: hidden;
+} */
+.slideout-menu {
+  background-color: #fafafa;
+  box-shadow: inset -5px 0 5px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  position: fixed;
+
+}
+/* #panel .toggle-button {
+  background-color: transparent !important;
+  border: 0;
+  color: #bbb;
+  font-size: 1.5rem;
+  -webkit-transform: scaleX(2);
+          transform: scaleX(2);
+  outline: 0;
+  cursor: pointer;
+  transition: all 300ms ease;
+  position: fixed;
+
+} */
+#panel .toggle-button{
+  position: fixed
+}
+#panel .toggle-button:hover {
+  color: #333;
+}
+#panel header {
+  padding: 3rem 0 0 5rem;
+}
+#panel header h2 {
+  /* padding-top: 3rem; */
+  /* color: #ccc; */
+}
+.slideout-open #panel .toggle-button {
+  color: #333;
+  position: fixed
+}
+
+#divFirst li div.back {
+
+    background: white;
+    height: 10px
+  }
+
+#plus {
+  width: 50px;
+}
+
+#menu {
+overflow: scroll;
+  height: calc(100vh - 85px);
+}
+
+nav {
+  position: fixed
+}
+
+
+/* END OF SLIDEOUT DIV */
