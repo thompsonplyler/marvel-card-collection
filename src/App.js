@@ -24,11 +24,10 @@ class App extends Component {
 
 
   render() {
-    return (
-      <div>
-      <AddToCollection characters={this.state.character} />
-      </div>
-          )
+    return <Route path="/" component={AddToCollection} />;
+      // <div>
+      // <AddToCollection characters={this.state.character} />
+      // </div>
     }
 }
 
