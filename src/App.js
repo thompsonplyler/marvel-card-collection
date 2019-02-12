@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import AddToCollection from './Container/AddToCollection'
+import {Route} from 'react-router-dom';
+import AddToCollection from './Container/AddToCollection';
 import './CSS/App.css';
 import './CSS/SlideOut.css';
 
