@@ -85,7 +85,7 @@
 
  /* MARVEL LOGO  */
  ul.cards li.card img.marvelLogo {
-   top: 8px;
+   top: 310px;
 width: 170px;
 height: 35px;
 position: relative;
@@ -101,8 +101,9 @@ border-style: inset;
 clear: left;
 margin-right: 15px;
 position: relative;
-    left: -25px;
-    top: 10px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
  }
 /* BACK IMAGE FLOAT */
  .hop{

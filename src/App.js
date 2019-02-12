@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Login from './components/Login';
+
 import AddToCollection from './Container/AddToCollection'
 import './CSS/App.css';
 import './CSS/SlideOut.css';
@@ -13,7 +15,7 @@ class App extends Component {
 
 //FETCH FOR CHARACTERS
   componentDidMount(){
-    fetch("https://gateway.marvel.com:443/v1/public/characters?limit=12&apikey=70c5f7383da76e0b2daaa2d2a67f7532")
+    fetch("https://gateway.marvel.com:443/v1/public/characters?events=238&orderBy=-modified&limit=12&apikey=70c5f7383da76e0b2daaa2d2a67f7532")
     .then(res=>res.json())
     .then(character => this.setState({
       character: character.data.results

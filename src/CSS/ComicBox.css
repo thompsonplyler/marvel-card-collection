@@ -16,7 +16,6 @@ header {
   display: inline-block;
   width: 100%;
   height: auto;
-  border-top: 1px solid #222;
 }
 
 .inner {
@@ -182,8 +181,9 @@ Original by @ashandrien | Comic Book Half Tone Background | https://codepen.io/a
   border-top: 3px solid #444;
   margin-bottom: -4px;
   position: relative;
-/* top: -105px; */
+top: -105px;
 z-index: -1;
+    height: 100%;
 }
 .panel.grey {
   background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #484848 0, #959595 30%, #acacac 50%, #959595 70%, #484848 100%);
@@ -233,6 +233,12 @@ Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
   border-right: 3px solid;
+  max-height: 100%;
+  min-height: 100px;
+  overflow: scroll;
+  top: 40px;
+  left: -0px;
+
 }
 .comic .single .comic-pane .text::before,
 .comic .triple .comic-pane .text::before,
@@ -259,6 +265,8 @@ Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/
   margin-left: 2em;
   -webkit-transform: skew(15deg);
           transform: skew(15deg);
+          margin-left: 40px;
+
 }
 .comic .single .comic-pane .text h2,
 .comic .triple .comic-pane .text h2,
