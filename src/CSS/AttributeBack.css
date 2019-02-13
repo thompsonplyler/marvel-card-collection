@@ -1,15 +1,15 @@
 
 /* Attribute Name and images  */
-.stats{
-  background-color: white;
-  overflow:hidden;
-  bottom: 0%;
-  position: absolute;
-  height: 40%;
-  width: 100%;
+.stats2{
+background-color: white;
+overflow:hidden;
+bottom: 0%;
+position: absolute;
+height: 40%;
+width: 100%;
 
 }
-.stat-name{
+.stat2-name{
   position: relative;
   top: -15px;
   left: 28px;
@@ -20,14 +20,14 @@ font-weight: bold;
 
 }
 
-.stat-pic{
+.stat2-pic{
   position: relative;
   left:5px;
   top: 10px
 }
-.stat-name2{
+.stat2-name2{
   position: relative;
-  top: -40px;
+  top: -39px;
   left: 28px;
 color: blue;
 font-family: Super2;
@@ -36,15 +36,22 @@ font-weight: bold;
 
 }
 
-.stat-pic2{
+.stat2-pic2{
   position: relative;
   left:5px;
   top: -10px
 }
 
-.stat-name3{
+.stat2-pic3{
+  top: -30px;
   position: relative;
-  top: -55px;
+  width: 30px;
+
+}
+
+.stat2-name3{
+  position: relative;
+  top: -53px;
   left: 28px;
 color: green;
 font-family: Super2;
@@ -53,14 +60,14 @@ font-weight: bold;
 
 }
 
-ul.cards li.card img.stat-pic3{
+ul.cards li.card img.stat2-pic3{
   position: relative;
   left:3px;
   top: -30px;
   width: 30px
 }
 
-.stat-name4{
+.stat2-name4{
   position: relative;
   top: -80px;
   left: 28px;
@@ -71,7 +78,14 @@ font-weight: bold;
 
 }
 
-ul.cards li.card img.stat-pic4{
+.stat2-pic4{
+top: -50px;
+position: relative;
+width: 23px;
+height: 33px;
+}
+
+ul.cards li.card img.stat2-pic4{
   position: relative;
   left:3px;
   top: -55px;
@@ -79,7 +93,7 @@ ul.cards li.card img.stat-pic4{
   height: 30px
 }
 
-.stat-name5{
+.stat2-name5{
   position: relative;
   top: -105px;
   left: 28px;
@@ -90,18 +104,16 @@ font-weight: bold;
 
 }
 
-ul.cards li.card img.stat-pic5{
+.stat2-pic5{
   position: relative;
-  left:3px;
-  top: -75px;
-  width: 20px;
-  height: 30px
+  top: -70px;
+  height: 33px;
 }
 
-.stat-name6{
+.stat2-name6{
   position: relative;
-  top: -135px;
-  left: 38px;
+  top: -95px;
+  left: 54px;
 color: brown;
 font-family: Super2;
 font-size: 19px;
@@ -109,12 +121,11 @@ font-weight: bold;
 
 }
 
-ul.cards li.card img.stat-pic6{
+ul.cardsBack li.card img.stat2-pic6{
   position: relative;
-  left:3px;
-  top: -95px;
-  width: 30px;
-  height: 30px
+  top: -65px;
+  height: 31px;
+  width: 51px;
 }
 
 /* END ATTRIBUTE */

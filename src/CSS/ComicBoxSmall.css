@@ -18,7 +18,7 @@ header {
   height: auto;
 }
 
-.inner {
+.inner2 {
   max-width: 1003px;
   margin: 0 auto;
   width: 100%;
@@ -78,7 +78,7 @@ ol {
   color: #038ecf;
 }
 
-.yellow {
+.yellow2 {
   color: #ffce55;
 }
 
@@ -175,7 +175,7 @@ END // Top Nav Bar
 START // Comic (Dot) Panels
 Original by @ashandrien | Comic Book Half Tone Background | https://codepen.io/ashandrien/pen/rnzsd
 ============================*/
-.panel {
+.panel2 {
   padding: 1em;
   background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
   border-top: 3px solid #444;
@@ -191,7 +191,7 @@ z-index: -1;
 .panel.ltgrey {
   background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #acacac 0, #dadada 30%, #f2f2f2 50%, #dadada 70%, #acacac 100%);
 }
-.panel.yellow {
+.panel2.yellow {
   background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #ffce55 0, #fffc83 30%, #ffffb1 50%, #fffc83 70%, #ffce55 100%);
 }
 
@@ -206,10 +206,10 @@ START // Comic (Content) Panes
 Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/pen/sDibB
 ============================*/
 /* BASE PANE PIECES */
-.comic .single .comic-pane,
-.comic .triple .comic-pane,
-.comic .double .comic-pane,
-.comic .triple.double .comic-pane {
+.comic2 .single .comic-pane22,
+.comic2 .triple .comic-pane22,
+.comic2 .double .comic-pane2,
+.comic2 .triple.double .comic-pane2 {
   width: 400px;
   max-width: 943px;
   height: auto;
@@ -219,10 +219,10 @@ Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/
   position: relative;
   margin: 0px 1%;
 }
-.comic .single .comic-pane .text,
-.comic .triple .comic-pane .text,
-.comic .double .comic-pane .text,
-.comic .triple.double .comic-pane .text {
+.comic2 .single .comic-pane2 .text2,
+.comic2 .triple .comic-pane2 .text2,
+.comic2 .double .comic-pane2 .text2,
+.comic2 .triple.double .comic-pane2 .text2 {
   width: 60%;
   height: auto;
   position: absolute;
@@ -240,10 +240,10 @@ Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/
   left: -0px;
 
 }
-.comic .single .comic-pane .text::before,
-.comic .triple .comic-pane .text::before,
-.comic .double .comic-pane .text::before,
-.comic .triple.double .comic-pane .text::before {
+.comic2 .single .comic-pane2 .text2::before,
+.comic2 .triple .comic-pane2 .text2::before,
+.comic2 .double .comic-pane2 .text2::before,
+.comic2 .triple.double .comic-pane2 .text2::before {
   content: "";
   dislay: block;
   position: absolute;
@@ -256,10 +256,10 @@ Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/
   border-left: 1px solid rgba(0, 0, 0, 0.05);
   -webkit-backface-visibility: hidden;
 }
-.comic .single .comic-pane .text .holder,
-.comic .triple .comic-pane .text .holder,
-.comic .double .comic-pane .text .holder,
-.comic .triple.double .comic-pane .text .holder {
+.comic2 .single .comic-pane2 .text2 .holder2,
+.comic2 .triple .comic-pane2 .text2 .holder2,
+.comic2 .double .comic-pane2 .text2 .holder2,
+.comic2 .triple.double .comic-pane2 .text2 .holder2 {
   width: 85%;
   margin-top: 1.5em;
   margin-left: 2em;
@@ -268,12 +268,12 @@ Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/
           margin-left: 40px;
 
 }
-.comic .single .comic-pane .text h2,
-.comic .triple .comic-pane .text h2,
-.comic .double .comic-pane .text h2,
-.comic .triple.double .comic-pane .text h2 {
+.comic2 .single .comic-pane2 .text2 h2,
+.comic2 .triple .comic-pane2 .text2 h2,
+.comic2 .double .comic-pane2 .text2 h2,
+.comic2 .triple.double .comic-pane2 .text2 h2 {
   font-size: 2em;
   margin-bottom: 0;
-  text-shadow: -1px -1px black, 1px 1px black,  2px 2px black;
+  text2-shadow: -1px -1px black, 1px 1px black,  2px 2px black;
   font-weight: 400;
 }

@@ -13,6 +13,8 @@
    display: inline;
     color: rgba(0,0,0,0.8);
     font-family: Super4;
+    top: 70px;
+    left: -40px;
 
   }
 
@@ -24,6 +26,8 @@
    display: inline;
    color: rgba(0,0,255,0.7);
    font-family: Super;
+   top: 140px;
+    left: -130px;
 
  }
 
@@ -49,3 +53,11 @@
    padding: 0 0 20px;
  }
  /* END OF HEADER */
+
+.pow{
+  width: 1000px;
+  position: absolute;
+  height: 389px;
+  top: 15px;
+  left: 190px;
+}

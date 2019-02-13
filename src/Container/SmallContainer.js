@@ -1,9 +1,9 @@
 import React from 'react';
-import Card from '../components/Card';
+import SmallCard from '../components/SmallCard';
 import '../CSS/App2.css';
 import jQuery from 'jquery'
 
-class CardContainer extends React.Component {
+class SmallContainer extends React.Component {
   //SETS INITIAL STATE: I = INCREMENT NUMBER FOR CARD CSS//
   state = {
     i: 1
@@ -35,13 +35,11 @@ render(){
   //ARRAY WITH ADDED CHARACTER INCREMENT//
   let charIncArray = this.props.characters.map(character => [character, character.inc = incrementNum++])
 //CRREATE INDIVIDUAL CARDS WITH CARD OBJECT AND INCREMENT//
-  let charArray = charIncArray.map(character=> <Card character={character[0]} increment={character[1]}  clickHandler={this.props.clickHandler} stacked={this.props.stacked} popUpHandler={this.props.popUpHandler} charHandler={this.props.charHandler}/>)
+  let charArray = charIncArray.map(character=> <SmallCard character={character[0]} increment={character[1]}  clickHandler={this.props.clickHandler} stacked={this.props.stacked} popUpHandler={this.props.popUpHandler} charHandler={this.props.charHandler}/>)
   return (
     <div className="bigDiv">
       <div id="div2" onDrop={(event) => {this.drop(event)}} onDragOver={(event) => {this.allowDrop(event)}}>
-      <div id="div3">
         {charArray}
-      </div>
       </div>
 
     </div>
@@ -49,4 +47,4 @@ render(){
 }
 }
 
-export default CardContainer
+export default SmallContainer

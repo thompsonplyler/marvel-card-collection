@@ -3,14 +3,21 @@ import '../CSS/Card.css';
 import '../CSS/Attribute.css';
 import '../CSS/Header.css';
 import '../CSS/SlideOut.css';
-
+import pow from '../images/pow.png'
 import Slideout from 'slideout'
 import CardContainer from "../Container/CardContainer"
+import SmallContainer from "../Container/SmallContainer"
+
 
 
 class AddToCollection extends Component {
 //FUNCTIONS FOR DRAG AND DROP//
+state = {
+  clicked: false,
+  view: false
+}
   allowDrop= (allowdropevent)=> {
+    // debugger
     allowdropevent.target.style.color = "blue";
     allowdropevent.preventDefault();
   }
@@ -27,39 +34,47 @@ drop = (dropevent) => {
 }
 //END DRAG AND DROP//
 
-componentDidMount(){
-  //FUNCTION FOR SLIDEOUT DIV//
-  let slideout = new Slideout({
-  'panel': document.getElementById('panel'),
-  'menu': document.getElementById('menu'),
-  'padding': 256,
-  'tolerance': 70
-    });
-
-// Toggle button
-document.querySelector('.toggle-button').addEventListener('click', function() {
-  slideout.toggle();
-});
+clickHandler = () => {
+  this.setState ({
+    clicked: !this.state.clicked
+  })
 }
+
+changeView = () => {
+  this.setState ({
+    view: !this.state.view
+  })
+}
+
   render(){
+    console.log(this.state.view);
     return(
       <div>
-        <nav id="menu">
-          <h2>Add to Collection</h2>
-            <div id="divFirst" onDrop={(event) => {this.drop(event)}} onDragOver={(event) => {this.allowDrop(event)}}>
-              <img id="plus" src="https://www.pngarts.com/files/3/Plus-Symbol-Download-PNG-Image.png" />
-                Drag cards here to add to your collection!
-            </div>
-          </nav>
+       <div id="divFirst" onDrop={(event) => {this.drop(event)}} onDragOver={(event) => {this.allowDrop(event)}}>
+      <input type="checkbox" id="slide" name="" value="" />
+      	<div class="container2">
+        	<label for="slide" class="toggle" onClick={() => {this.changeView()}}>☰</label>
+      		<nav class="sidebar">
+
+      		</nav>
+      	 </div>
+        </div>
             <main id="panel">
               <header>
-                <button className="toggle-button">☰</button>
                 <header className="hero">
+                <img className="pow" src={pow} />
                   <h1 className="title-Marvel">MARVEL</h1> <h2>Brawl</h2>
                 </header>
-                  <ul className="cards">
-                    <CardContainer characters={this.props.characters}/>
-                  </ul>
+                  {this.state.view?
+                    <ul className={this.state.clicked ? "cards2 transition" : "cards2" }>
+
+                    <SmallContainer characters={this.props.characters} clickHandler={this.clickHandler} popUpHandler={this.props.popUpHandler} stacked={this.state.clicked} charHandler={this.props.charHandler}/>
+                    </ul>:
+                    <ul className={this.state.clicked ? "cards transition" : "cards" }>
+            <CardContainer characters={this.props.characters} clickHandler={this.clickHandler} popUpHandler={this.props.popUpHandler} stacked={this.state.clicked} charHandler={this.props.charHandler}/>
+
+            </ul>
+          }
               </header>
             </main>
 
@@ -76,6 +91,13 @@ export default AddToCollection
 
 
 
+// <nav id="menu">
+// <h2>Add to Collection</h2>
+// <div id="divFirst" onDrop={(event) => {this.drop(event)}} onDragOver={(event) => {this.allowDrop(event)}}>
+// <img id="plus" src="https://www.pngarts.com/files/3/Plus-Symbol-Download-PNG-Image.png" />
+// Drag cards here to add to your collection!
+// </div>
+// </nav>
 
 
 
