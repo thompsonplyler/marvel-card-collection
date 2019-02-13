@@ -47,6 +47,7 @@ changeView = () => {
 }
 
   render(){
+    
     console.log(this.state.view);
     return(
       <div>
