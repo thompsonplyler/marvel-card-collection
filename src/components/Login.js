@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Card from '../components/Card';
 import '../CSS/App3.css';
 import $ from 'jquery'
 
@@ -102,7 +101,7 @@ class Login extends Component {
                            </div>
                    </div>
                    <div class="sub-button">
-                       <input class="button" type="submit" value="Submit" />
+                       <input onClick={this.props.clickHandler} class="button" type="submit" value="Submit" />
                    </div>
                </div>
            </div>

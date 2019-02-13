@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import {Route} from 'react-router-dom';
 import AddToCollection from './Container/AddToCollection';
+import Login from './components/Login';
 import './CSS/App.css';
 import './CSS/SlideOut.css';
+import Test from './components/Test';
 
 
 
@@ -11,6 +13,14 @@ class App extends Component {
   state={
     character: [],
   }
+
+submitButtonClicked= (event) => {
+  console.log(event)
+}
+
+valueEntered = () => {
+  console.log("Poop")
+}
 
 //FETCH FOR CHARACTERS
   componentDidMount(){
@@ -21,16 +31,36 @@ class App extends Component {
             })
           )
     }
+    render(){
+    return <Test />
+    // (<div>
+    //   {//DEFINE LOGIN ROUTE
+    //   }
+      
+    //   <Route 
+    //   path="/login" 
+    //   render={()=>(
+    //           <Login clickHandler={this.submitButtonClicked} />
+    //   )}
+    //   />;
+      
+    //   {// DEFINE COLLECTION PATH/ MAIN SCREEN
+    //   }
+      
+    //   <Route 
+    //   path="/collection" 
+    //   render={()=>(
+    //           <AddToCollection characters={this.state.character} />
+    //   )}
+    //   />;
+
+    //   </div>
+    // )
+  }
 
 
-  render() {
-    return <Route path="/" component={AddToCollection} />;
-      // <div>
-      // <AddToCollection characters={this.state.character} />
-      // </div>
-    }
 }
 
 export default App;
 
-// <Login />
+

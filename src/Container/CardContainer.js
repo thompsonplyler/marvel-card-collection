@@ -55,6 +55,7 @@ render(){
   let charIncArray = this.props.characters.map(character => [character, character.inc = incrementNum++])
 //CRREATE INDIVIDUAL CARDS WITH CARD OBJECT AND INCREMENT//
   let charArray = charIncArray.map(character=> <Card character={character[0]} increment={character[1]} />)
+  
   return (
     <div className="bigDiv">
       <div id="div2" onDrop={(event) => {this.drop(event)}} onDragOver={(event) => {this.allowDrop(event)}}>
